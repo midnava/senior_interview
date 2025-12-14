@@ -4,7 +4,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Is it safe to replace `Executors.newSingleThreadExecutor()` with `Executors.newFixedThreadPool(10)`?
+ * You are reviewing a Merge Request where the dev wants to improve performance
+ * by replacing `Executors.newSingleThreadExecutor()` with `Executors.newFixedThreadPool(10)`.
+ * Is it safe to make this change?
+ * What could happen if we switch to multiple threads instead of a single thread?
  * <p>
  * Duration 15 minutes
  */
