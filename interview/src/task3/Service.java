@@ -10,10 +10,8 @@ package task3;
 public class Service {
     private static int counter = 0;
 
-    //T1, T3, T5 are blocked
     public synchronized void incrementA() {
-        counter++; //T0 - long operation
-        // Which thread acquires the lock next after it is released?
+        counter++;
     }
 
     public static synchronized void incrementB() {
@@ -21,10 +19,13 @@ public class Service {
     }
 
 
-    //Question N2
-    //T1, T3, T5 are blocked
+
+
+    //------------------------------------------------------------------------
+    //Additional question
+    //T1, T3, T5 threads are blocked
     public synchronized void incrementC() {
-        counter++; //T0 - long operation
+        counter++; //T0 thread here - long operation
         // Which thread acquires the lock next after it is released?
     }
 }
