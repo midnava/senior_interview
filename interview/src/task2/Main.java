@@ -27,5 +27,6 @@ public class Main {
         Thread.sleep(500);
         publisher2.publish(new Event(6));
         Thread.sleep(500);
+
     }
 }
