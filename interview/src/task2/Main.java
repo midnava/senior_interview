@@ -3,7 +3,7 @@ package task2;
 /**
  * Design and implement a thread-safe Publisher/Subscriber (pub/sub) mechanism.
  * <p>
- * Duration 15 minutes.
+ * Duration 10 minutes.
  */
 public class Main {
     public static void main(String[] args) throws InterruptedException {

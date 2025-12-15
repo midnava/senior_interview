@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Refactor this class to be truly immutable.
  * <p>
- * Duration 10 minutes.
+ * Duration 5 minutes.
  */
 public class ImmutableRecord {
     public String id;

@@ -23,7 +23,7 @@ public class Service {
 
     //------------------------------------------------------------------------
     //Additional question
-    //T1, T3, T5 threads are blocked
+    //T1, T3, T5 threads are blocked in that order
     public synchronized void incrementC() {
         counter++; //T0 thread here - long operation
         // Which thread acquires the lock next after it is released?
