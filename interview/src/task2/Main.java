@@ -6,7 +6,7 @@ package task2;
  * Duration 15 minutes.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Subscriber subscriber = new Subscriber(); //single subscriber
 
         Publisher publisher1 = new Publisher();
@@ -14,13 +14,18 @@ public class Main {
 
         //Thread 1:
         publisher1.publish(new Event(1));
+        Thread.sleep(500);
         publisher1.publish(new Event(2));
+        Thread.sleep(500);
         publisher1.publish(new Event(3));
+        Thread.sleep(500);
 
         //thread 2:
         publisher2.publish(new Event(4));
+        Thread.sleep(500);
         publisher2.publish(new Event(5));
+        Thread.sleep(500);
         publisher2.publish(new Event(6));
-
+        Thread.sleep(500);
     }
 }
