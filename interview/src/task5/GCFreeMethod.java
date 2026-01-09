@@ -15,7 +15,7 @@ public class GCFreeMethod {
         map.put(id, price); //any performance issue?
     }
 
-    public void doSomethingWithList() {
+    public void doSomething() {
         StringBuilder builder = new StringBuilder(); // avoid allocating on every call
 
         builder.append("StartTime:").append(System.currentTimeMillis());
